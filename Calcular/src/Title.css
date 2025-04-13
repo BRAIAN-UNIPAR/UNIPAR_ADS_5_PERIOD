@@ -1,0 +1,16 @@
+.hTittle{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border: 1px solid #e6e8eb;
+}
+
+.boxLogo{
+    display: flex;
+    align-items: center;
+    color: #808080;
+}
+.span1{
+    color: #808080;
+}

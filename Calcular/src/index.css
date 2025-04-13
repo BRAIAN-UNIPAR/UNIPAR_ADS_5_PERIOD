@@ -1,0 +1,22 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+}
+
+.Main{
+  display: flex;
+  flex-direction: column;
+  margin-left: 71px;
+  margin-top: 0px;
+  background-color: rgb(255, 255, 255);
+}
+
+.conteudo {
+  display: flex;
+  flex-direction: column;
+  width: 100%; /* A parte esquerda ocupa 100% da tela */
+  padding: 20px;
+  overflow-y: auto; /* Permite rolagem caso o conteúdo exceda a altura da tela */
+}

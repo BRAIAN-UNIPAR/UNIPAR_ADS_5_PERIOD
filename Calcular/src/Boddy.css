@@ -1,0 +1,61 @@
+.hBoddy{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    align-items: left;
+    justify-content: space-between;
+    padding: 10px 20px;
+    margin-top: -19px ;
+
+}
+
+.box{
+    align-items: center;  
+}
+
+#hTittle{
+    color: #494D4B;
+    align-items: center;
+}
+
+.info3 {
+    display: flex;
+    width: 100%; /* div ocupe toda a largura disponível */
+    justify-content: space-between; /* Distribui os spans entre as extremidades */
+    align-items: left; /* spans alinhados verticalmente */
+    border-bottom: 1px solid #e6e8eb;
+}
+
+#sp4 {
+    color: #808080;
+    text-align: left; /* Alinha o texto à esquerda */
+}
+
+
+#sp5 {
+    color: #808080;
+    text-align: center; /* Centraliza o texto */
+    flex-grow: 1; /* Faz o segundo span ocupar o espaço restante e se centralizar */
+}
+
+
+#sp6 {
+    color: #808080;
+    text-align: right; /* Alinha o texto à direita */
+}
+
+
+#p4{
+    margin-top: 10000x;
+}
+
+.p3,.p4,.p5,.p6{
+    margin: 0px;
+    padding: 0px;
+    color: #494D4B;
+}
+
+.p3{
+   margin: 0px;
+   margin-top: 10px;
+}
