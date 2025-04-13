@@ -1,0 +1,332 @@
+
+.container-principal {
+  display: flex; 
+  justify-content: space-between; 
+  padding: 10%;
+  gap: 20px;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  width: 100%; 
+  gap: 2%; 
+  padding-top: 20px; 
+  padding-bottom: 20px; 
+  justify-content: center; 
+  align-items: center; 
+  text-align: center;
+}
+
+.edit {
+  width: 100%; 
+  padding: 60px;
+  padding-right: 60px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  box-shadow: 0 2% 4% rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* ------------------------- Formulário de Rotina -------------------- */
+.seccao-rotina {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 700px;
+  gap: 2%;
+  align-items: center;
+}
+
+.formulario-rotina {
+  background-color: #fff;
+  padding: 4%;
+  border-radius: 8px;
+  box-shadow: 0 2% 4% rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 3%;
+  align-items: center;
+}
+
+.grupo-formulario {
+  margin-bottom: 4%;
+  width: 100%;
+}
+
+.campo-input {
+  width: 100%;
+  padding: 1.2em;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-top: 2%;
+  font-size: 1em;
+  box-sizing: border-box;
+}
+
+.botao-submit {
+  background-color: #a7aaa7;
+  color: white;
+  padding: 4% 8%;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  width: 100%;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.botao-submit:hover {
+  background-color: #1e5c2f;
+  transform: scale(1.05);
+}
+
+/* --------------Botões e Interações ---------------- */
+
+.adicionar-rotina {
+  background-color: #555;
+  color: #fff;
+  border: none;
+  padding: 20px 20px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.5em;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  align-self: center;
+}
+
+.adicionar-rotina:hover {
+  background-color: #333;
+  transform: scale(1.05);
+}
+
+/* -------------- Pesquisa e Listagem ------------- */
+.seccao-pesquisa {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 5%;
+  padding: 28px;
+}
+
+.campo-pesquisa {
+  width: 100%;
+  max-width: 80%;
+  padding: 4%;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1.1em;
+  justify-content: center;
+}
+
+.lista-rotina {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+  max-width: 80%;
+  margin-top: 5%;
+  flex-grow: 1;
+}
+
+/* Esse é do app*/
+.item-rotina {
+  background-color: #fff;
+  padding: 3%;  /* Pode ajustar o padding se necessário */
+  border-radius: 8px;
+  margin-bottom: 10px;
+  box-shadow: 0 2% 5% rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1em;
+  width: 100%;
+}
+
+/* Esse é do edit*/
+.item-rotinaa {
+  background-color: #fff;
+  padding: 3%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  box-shadow: 0 2% 5% rgba(0, 0, 0, 0.1);
+  display: flex;
+  font-size: 1em;
+  width: 100%; 
+  flex-direction: column;
+  box-sizing: border-box; /* Garante que padding não afete a largura */
+}
+
+.item-rotina.concluida {
+  background-color: #e0e0e0;
+  text-decoration: line-through;
+}
+
+.rotina-vazia {
+  text-align: center;
+  color: #777;
+}
+
+.checkbox-rotina {
+  margin-left: 10px;
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+/* ---------------------------- Mensagens --------------------------- */
+
+.mensagem-parabens {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #157018;
+  color: white;
+  font-size: 1.2em;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Adicionando a altura fixa para o campo de comentário */
+.comentario-rotina {
+  width: 100%;
+  height: 60px; /* Define uma altura fixa */
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-size: 1em;
+  box-sizing: border-box;
+  resize: none; /* Tira o redimensionamento */
+}
+
+/* ---------------------------- Div Edit --------------------------- */
+
+.botao-excluir {
+  background-color: #000000;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  margin-left: 10px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.botao-excluir:hover {
+  background-color: #e03a3a;
+  transform: scale(1.05);
+}
+
+.botao-excluir:active {
+  transform: scale(0.98);
+}
+
+.texto-edit{
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  
+}
+
+/* ---------------------------- Responsividade ---------------------- */
+
+/*Esse é pra telas medias tipo tablet */
+@media (max-width: 768px) {
+  .container-principal {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .app, .edit {
+    width: 100%; 
+    padding: 30px; 
+  }
+
+  .seccao-rotina, .seccao-pesquisa {
+    width: 100%;
+  }
+
+  .formulario-rotina {
+    padding: 5%;
+  }
+
+  .campo-pesquisa {
+    max-width: 90%; /* Diminui a largura máxima para dispositivos menores */
+  }
+
+  .lista-rotina {
+    margin-top: 5%;
+  }
+
+
+  .edit {
+    width: 100%; 
+    padding-right: 0; /* Remove o padding-right para melhorar o layout em telas pequenas */
+    padding-left: 0; /* Remove o padding-left também para uma melhor exibição */
+    box-sizing: border-box; 
+  }
+
+  .item-rotina {
+    font-size: 0.9em; /* Ajusta o tamanho da fonte para telas menores */
+    padding: 10px; 
+  }
+
+  .botao-excluir {
+    font-size: 0.9em; 
+    padding: 6px 10px; 
+  }
+}
+
+/* Aqui a reposnividade é para telas pequenas como de celulares */
+@media (max-width: 480px) {
+  .adicionar-rotina {
+    font-size: 1.2em;
+    padding: 4% 7%;
+  }
+
+  .botao-submit {
+    padding: 5% 10%;
+    font-size: 1.2em;
+  }
+
+  .campo-input, .campo-pesquisa {
+    font-size: 0.95em;
+  }
+
+  .item-rotina {
+    font-size: 0.8em; /* Reduz o tamanho da fonte em telas pequenas */
+    padding: 8px; 
+    width: 100%;
+  }
+
+  .edit {
+    padding-right: 0; 
+    padding-left: 0; 
+  }
+
+  .botao-excluir {
+    font-size: 0.8em; 
+    padding: 6px 8px;
+  }
+}
+
+@media (max-width: 768px) {
+  .item-rotinaa {
+    width: 108%; 
+    padding: 10px;
+  }
+}
+
+/*  Aqui a reposnividade é para telas pequenas também como de celulares */
+@media (max-width: 480px) {
+  .item-rotinaa {
+    width: 108%; /* Faz o item ocupar toda a largura disponível */
+    font-size: 0.9em; /* Ajusta o tamanho da fonte para telas pequenas */
+    padding: 10px; /* Ajusta o padding para telas pequenas */
+  }
+}
